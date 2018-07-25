@@ -17,7 +17,7 @@ EXCHANGE types:
 ### **getBalance**
 * Request
 <!--Code Block-->
-```JSON
+```JavaScript
 {
     "exchange":"EXCHANGE",
     "channel":"getBalance"
@@ -25,43 +25,14 @@ EXCHANGE types:
 ```
 * Response
 <!--Code Block-->
-```JSON
+```JavaScript
 {
     "channel":"getBalance",
     "data":{"symbol":amount}
 }
 ```
 Example _v1
-```JSON
-{
-    "channel":"getBalance",
-    "data":{
-        "BTC":1,
-        "ETH":0.05,
-        ...
-        }
-}
-
-
-### **getBalance**
-* Request
-<!--Code Block-->
-```JSON
-{
-    "exchange":"EXCHANGE",
-    "channel":"getBalance"
-}
-```
-* Response
-<!--Code Block-->
-```JSON
-{
-    "channel":"getBalance",
-    "data":{"symbol":amount}
-}
-```
-Example _v1
-```JSON
+```JavaScript
 {
     "channel":"getBalance",
     "data":{
