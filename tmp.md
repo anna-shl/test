@@ -103,10 +103,21 @@ To change the channel, one need only replace the name of the channel.</p>
 |OrderStatus | string                                 |           
 <br><br>
 
-| Command | Description |
+| Name | Type |
 | --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| OrderId | string |
+| Result | int (matched by enum with OrderStatus) |
+| Message | string |
+| Amount | double |
+| AmountFilled | double |
+| Price | double |
+| AveragePrice | double |
+| OrderDate | System.DateTime |
+| Symbol | string |
+| IsBuy | bool |
+| Fees | double |
+| FeesCurrency | string |
+| OrderStatus | string |
 
 
 _Example GetAllOpenOrders:_
