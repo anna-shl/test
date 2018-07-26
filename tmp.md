@@ -86,21 +86,21 @@ To change the channel, one need only replace the name of the channel.</p>
 ```
 **Parameters:**
 <br>
-Name       |   Type   
-------------|----------
-OrderId |    string     
-Result |int (matched by enum with OrderStatus)     
-Message |string           
-Amount | double         
-AmountFilled | double           
-Price | double           
-AveragePrice | double           
-OrderDate | System.DateTime           
-Symbol | string           
-IsBuy | bool           
-Fees |double          
-FeesCurrency | string           
-OrderStatus | string           
+|Name        |   Type                                 |
+|------------|----------------------------------------|
+|OrderId     | string                                 |
+|Result      | int (matched by enum with OrderStatus) |    
+|Message     | string                                 |
+|Amount      | double                                 |         
+|AmountFilled| double                                 |          
+|Price       | double                                 |          
+|AveragePrice| double                                 |           
+|OrderDate   | System.DateTime                        |           
+|Symbol      | string                                 |           
+|IsBuy       | bool                                   |           
+|Fees        | double                                 |          
+|FeesCurrency| string                                 |           
+|OrderStatus | string                                 |           
 
 
 
