@@ -2,37 +2,26 @@
 
 # <center> **API documentation**</center>
 
-<div style="-webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-rule: 1px dotted #e0e0e0; -moz-column-rule: 1px dotted #e0e0e0; column-rule: 1px dotted #e0e0e0;">
-    <div style="display: inline-block;">
-        <h3>EXCHANGE types&nbsp;</h3>
-        <pre>
-Binance 
-CoinEx
-Poloniex
-Huobi
-Livecoin
-Livecoin
-Otcbtc
-Gateio
-Cobinhood
-</pre>
-    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <div style="display: inline-block;">
-        <h3>REQUEST types</h3>
-        <pre>
-getBalance       
-placeOrder     
-placeSubOrder      
-getAllOpenOrders      
-getAllCompletedOrders
-cancelOrder
-getOrder<br>
-        </pre>
-    </div>
-</div>
-<span style="color:red;">*Please note “Request and response format” file for more explanations. </span>
+EXCHANGE types
 
----
+* Binance 
+* CoinEx
+* Poloniex
+* Huobi
+* Livecoin
+* Otcbtc
+* Gateio
+* Cobinhood
+
+REQUEST types
+* getBalance       
+* placeOrder     
+* placeSubOrder      
+* getAllOpenOrders      
+* getAllCompletedOrders
+* cancelOrder
+* getOrder
+
 ---
 ---
 
