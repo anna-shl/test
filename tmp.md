@@ -101,7 +101,12 @@ To change the channel, one need only replace the name of the channel.</p>
 |Fees        | double                                 |          
 |FeesCurrency| string                                 |           
 |OrderStatus | string                                 |           
+<br><br>
 
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
 
 
 _Example GetAllOpenOrders:_
