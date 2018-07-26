@@ -1,10 +1,8 @@
 <!--Heading-->
 
-# <center> **WebSocket API documentation**</center>
+# **WebSocket API documentation**
 
 EXCHANGE types
-<span style="text-decoration:underline">this</span>
-<u>zkvk</u>
 * Binance 
 * CoinEx
 * Poloniex
@@ -13,6 +11,7 @@ EXCHANGE types
 * Otcbtc
 * Gateio
 * Cobinhood
+<br><br>
 
 REQUEST types
 * getBalance       
