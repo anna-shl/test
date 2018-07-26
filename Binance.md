@@ -33,31 +33,24 @@ The requestWindow, NonceStyle, NonceOffset, SymbolSeparator, SymbolIsReversed ar
 
 5.	After creating the Binance instance we continue in the RequestHandler class.
 In this stage there is a need to use the private and public keys which are stored in the BaseAPI class for now. In this development stage, the keys are stored in the code. As the project grows the keys will be encrypted and stored in the database.
-
+___
 **Channel: “getBalance”**
 <br>There are a few tasks to perform before retrieving the balance of the account. <br>
 In the ExchangeBinanceAPI class noncePayload dictionary is created and stored in a “payload” variable.<br>
 A nonce is generated and placed in the “payload” by the name: nonce.<br>
 A recWindow is placed in the “payload”.<br>
 The request method (“GET”) is established. <br>
-A timestamp is placed in the “payload”.<br>
+A timestamp is placed in the “payload”.<br><br>
 Once these tasks are completed a response is sent to the client with the name of the channel (“getBalance”) and the data. The data consists of currencies and their amount which the exchange provides.<br>
+___
+**Channel: getAllOpenOrders + getAllCompletedOrders**
+<br>There are a few tasks to perform before retrieving the balance of the account. <br>
+In the ExchangeBinanceAPI class noncePayload dictionary is created and stored in a “payload” variable.<br>
+A nonce is generated and placed in the “payload” by the name: nonce.<br>
+A recWindow is placed in the “payload”.<br>
+The request method (“GET”) is established. <br>
+A symbol which is the currency pair that will be shown for the open orders is placed in the “payload”.<br>
+A timestamp is placed in the “payload”.<br><br>
 
-```JavaScript
-{
-    "channel":"getBalance",
-    "data":{"symbol":amount}
-}
-```
-_Example getBalance:_ 
-```JavaScript
-{
-    "channel":"getBalance",
-    "data":{
-        "BTC":1,
-        "ETH":0.05,
-        ...
-        }
-}
-```
-**Channel: getAllOpenOrders**
+Once these tasks are completed a response is sent to the client with the name of the channel (“getAllOpenOrders” or "getAllCompletedOrders") and the data. The data consists of all the open orders for the account in the Binance exchange and for each open order it contains identification parametrs of the order.
+___
