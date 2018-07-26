@@ -85,7 +85,8 @@ To change the channel, one need only replace the name of the channel.</p>
 }
 ```
 **Parameters:**
- Name       |   Type   
+<br>
+Name       |   Type   
 ------------|----------
 OrderId |    string     
 Result |int (matched by enum with OrderStatus)     
