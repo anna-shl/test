@@ -1,9 +1,10 @@
 <!--Heading-->
 
-# <center> **API documentation**</center>
+# <center> **WebSocket API documentation**</center>
 
 EXCHANGE types
-
+<span style="text-decoration:underline">this</span>
+<u>zkvk</u>
 * Binance 
 * CoinEx
 * Poloniex
@@ -94,7 +95,6 @@ To change the channel, one need only replace the name of the channel.</p>
 }
 ```
 **Parameters:**
-
 | Name | Type |
 | --- | --- |
 | OrderId | string |
