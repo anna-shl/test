@@ -2,16 +2,36 @@
 
 # <center> **API documentation**</center>
 
-EXCHANGE types:
-<!--UL-->
-* Binance
-* CoinEx
-* Poloniex
-* Huobi
-* Livecoin
-* Otcbtc
-* Gateio
-* Cobinhood
+<div style="-webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-rule: 1px dotted #e0e0e0; -moz-column-rule: 1px dotted #e0e0e0; column-rule: 1px dotted #e0e0e0;">
+    <div style="display: inline-block;">
+        <h3>EXCHANGE types&nbsp;</h3>
+        <pre>
+Binance 
+CoinEx
+Poloniex
+Huobi
+Livecoin
+Livecoin
+Otcbtc
+Gateio
+Cobinhood
+</pre>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div style="display: inline-block;">
+        <h3>REQUEST types</h3>
+        <pre>
+getBalance       
+placeOrder     
+placeSubOrder      
+getAllOpenOrders      
+getAllCompletedOrders
+cancelOrder
+getOrder<br>
+        </pre>
+    </div>
+</div>
+<span style="color:red;">*Please note “Request and response format” file for more explanations. </span>
+
 ---
 ---
 ---
@@ -86,23 +106,6 @@ To change the channel, one need only replace the name of the channel.</p>
 ```
 **Parameters:**
 <br>
-|Name        |   Type                                 |
-|------------|----------------------------------------|
-|OrderId     | string                                 |
-|Result      | int (matched by enum with OrderStatus) |    
-|Message     | string                                 |
-|Amount      | double                                 |         
-|AmountFilled| double                                 |          
-|Price       | double                                 |          
-|AveragePrice| double                                 |           
-|OrderDate   | System.DateTime                        |           
-|Symbol      | string                                 |           
-|IsBuy       | bool                                   |           
-|Fees        | double                                 |          
-|FeesCurrency| string                                 |           
-|OrderStatus | string                                 |           
-<br><br>
-
 | Name | Type |
 | --- | --- |
 | OrderId | string |
