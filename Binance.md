@@ -10,15 +10,15 @@
 
 ---
 ---
+>The request and responses formats are located in this link: 
+    [WebSocket API documentation](https://github.com/anna-shl/test/blob/master/tmp.md) 
+
 The Binance exchange has 5 standard levels that will always be performed, these levels are initialize the exchange.
 <br>
 The 6th level is the one that will execute the request.
 
 **Initialization**
 <br>
->The request and responses formats are located in this link: 
-    [Requsest and response](https://github.com/anna-shl/test/blob/master/tmp.md) 
-
 1. The RequestHandler class contains all the request task types, each request creates an instance of the exchange. The request types are as follows: GetBalance, PlaceOrder, PlaceSubOrder, GetAllOpenOrders, GetAllCompletedOrders CancelOrder and GetOrder.
 
 2.	The standard URLs are created, Base URL, Base URL for the web socket, Private URL and a withdrawal URL.
