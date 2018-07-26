@@ -56,8 +56,8 @@ _Example getBalance:_
 ```
 ---
 <!--getBalance-->
-### **getAllCompletedOrders + getAllOpenOrders**
-<p>These two requests and responses are similar, the only difference is the name of the channel. </p>
+### **getAllCompletedOrders + getAllOpenOrders + getOrder**
+<p>These three requests and responses are similar, the only difference is the name of the channel. </p>
 <p>The request, response and example which are shown below are using the getAllOpenOrders channel.
 <br>
 To change the channel, one need only replace the name of the channel.</p>
@@ -115,7 +115,7 @@ To change the channel, one need only replace the name of the channel.</p>
 _Example GetAllOpenOrders:_
 ```JavaScript
 {
-    "channel":"GetAllCompletedOrders",
+    "channel":"GetAllOpenOrders",
     "data":[{
         "OrderId":"123456789",
         "Result":3,

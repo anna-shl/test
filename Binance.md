@@ -32,39 +32,36 @@ NonceStyle and NonceOffsetare declared.
 The requestWindow, NonceStyle, NonceOffset, SymbolSeparator, SymbolIsReversed are initialized.
 
 5.	After creating the Binance instance we continue in the RequestHandler class.
-In this stage there is a need to use the private and public keys which are stored in the BaseAPI class for now. In this development stage, the keys are stored in the code. As the project grows the keys will be encrypted and stored in the database.
+In this stage there is a need to use the private and public keys which are stored in the BaseAPI class for now. In this development stage, the keys are stored in the code. As the project grows the keys will be encrypted and stored in the database.<br>
+
+There are a few tasks to perform before retrieving or accomplishing the request.<br>
+In the ExchangeBinanceAPI class noncePayload dictionary is created and stored in a payload.<br>
+A nonce is generated and placed in the “payload” by the name: nonce.
 ___
 **Channel: “getBalance”**
-<br>There are a few tasks to perform before retrieving the balance of the account. <br>
-In the ExchangeBinanceAPI class noncePayload dictionary is created and stored in a “payload” variable.<br>
-A nonce is generated and placed in the “payload” by the name: nonce.<br>
-A recWindow is placed in the “payload”.<br>
+<br>A recWindow is placed in the “payload”.<br>
 The request method (“GET”) is established. <br>
 A timestamp is placed in the “payload”.<br><br>
 Once these tasks are completed a response is sent to the client with the name of the channel (“getBalance”) and the data. The data consists of currencies and their amount which the exchange provides.<br>
 ___
 **Channel: getAllOpenOrders + getAllCompletedOrders**
-<br>There are a few tasks to perform before retrieving the balance of the account. <br>
-In the ExchangeBinanceAPI class noncePayload dictionary is created and stored in a “payload” variable.<br>
-A nonce is generated and placed in the “payload” by the name: nonce.<br>
-A recWindow is placed in the “payload”.<br>
+<br>A recWindow is placed in the “payload”.<br>
 The request method (“GET”) is established. <br>
 A symbol which is the currency pair that will be shown for the open orders is placed in the “payload”.<br>
-A timestamp is placed in the “payload”.<br><br>
-
+A timestamp is placed in the “payload”.<br>
 "getAllOpenOrders" channel only withdraws the open orders.<br>
 "getAllCompletedOrders" channel only withdraws the orders that were filled and canceled.
 
 Once these tasks are completed a response is sent to the client with the name of the channel and the data. The data consists of all the open or completed orders for the account in the Binance exchange and for each open or completed order it contains the identification parametrs of the order.
 ___
 **Channel: getOrder**
-<br>There are a few tasks to perform before retrieving the balance of the account. <br>
-In the ExchangeBinanceAPI class noncePayload dictionary is created and stored in a “payload” variable.<br>
-A nonce is generated and placed in the “payload” by the name: nonce.<br>
-A recWindow is placed in the “payload”.<br>
+<br>A recWindow is placed in the “payload”.<br>
 The request method (“GET”) is established. <br>
 A timestamp is placed in the “payload”.<br>
 A symbol which is the currency pair that will be shown for the open orders is placed in the “payload”.<br>
 The order ID is placed in the “payload”.<br>
+A new payload is created for the sole purpose of including the fees of the order and it is added to the response that is sent to the client.
+
 <br>
-Once these tasks are completed a response is sent to the client with the name of the channel (“getBalance”) and the data. The data consists of currencies and their amount which the exchange provides.<br>
+Once these tasks are completed a response is sent to the client with the name of the channel (getOrder) and the data. The data consists of all the open or completed orders for the account in the Binance exchange and for each open or completed order it contains the identification parametrs of the order.<br>
+
